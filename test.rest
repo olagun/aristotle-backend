@@ -1,0 +1,24 @@
+
+POST http://localhost:8080/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbSIsImlhdCI6MTU5MDI5NzI4MCwiZXhwIjoxNTkwMjk3Mjk1fQ.9U9VbFFixASjzkaSOtKQNC9PV6NLA2KMWIrF0iL-evU
+
+{
+  "username": "sam"
+}
+
+###
+POST http://localhost:8081/token
+Content-Type: application/json
+
+{
+  "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbSIsImlhdCI6MTU5MDI5NzI3MX0.B0AoyM9nsna7QXATXvGzCkyx15UVGiQpI38XutRMPOQ"
+}
+
+### 
+POST http://localhost:8081/login
+Content-Type: application/json
+
+{
+  "username": "sam"
+}
